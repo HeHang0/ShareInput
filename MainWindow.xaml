@@ -1,0 +1,31 @@
+﻿<Window x:Class="SharePoint.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SharePoint"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Button x:Name="StartButton" Content="开始" Click="StartButton_Click" HorizontalAlignment="Left" Margin="25,25,0,0" VerticalAlignment="Top" Width="75"/>
+        <Label Content="向左移动：" HorizontalAlignment="Left" Margin="25,90,0,0" VerticalAlignment="Top"/>
+        <Label Content="{Binding MoveToLeft}" HorizontalAlignment="Left" Margin="100,90,0,0" VerticalAlignment="Top"/>
+        <Label Content="向右移动：" HorizontalAlignment="Left" Margin="25,115,0,0" VerticalAlignment="Top"/>
+        <Label Content="{Binding MoveToRight}" HorizontalAlignment="Left" Margin="100,115,0,0" VerticalAlignment="Top"/>
+        <Label Content="向上移动：" HorizontalAlignment="Left" Margin="25,140,0,0" VerticalAlignment="Top"/>
+        <Label Content="{Binding MoveToTop}" HorizontalAlignment="Left" Margin="100,140,0,0" VerticalAlignment="Top"/>
+        <Label Content="向下移动：" HorizontalAlignment="Left" Margin="25,165,0,0" VerticalAlignment="Top"/>
+        <Label Content="{Binding MoveToButtom}" HorizontalAlignment="Left" Margin="100,165,0,0" VerticalAlignment="Top"/>
+        <Label Content="向左上移动：" HorizontalAlignment="Left" Margin="200,90,0,0" VerticalAlignment="Top"/>
+        <Label Content="{Binding MoveToLeftTop}" HorizontalAlignment="Left" Margin="275,90,0,0" VerticalAlignment="Top"/>
+        <Label Content="向右上移动：" HorizontalAlignment="Left" Margin="200,115,0,0" VerticalAlignment="Top"/>
+        <Label Content="{Binding MoveToRightTop}" HorizontalAlignment="Left" Margin="275,115,0,0" VerticalAlignment="Top"/>
+        <Label Content="向左下移动：" HorizontalAlignment="Left" Margin="200,140,0,0" VerticalAlignment="Top"/>
+        <Label Content="{Binding MoveToLeftButtom}" HorizontalAlignment="Left" Margin="275,140,0,0" VerticalAlignment="Top"/>
+        <Label Content="向右下移动：" HorizontalAlignment="Left" Margin="200,165,0,0" VerticalAlignment="Top"/>
+        <Label Content="{Binding MoveToRightButtom}" HorizontalAlignment="Left" Margin="275,165,0,0" VerticalAlignment="Top"/>
+        <Label Content="已经按键：" HorizontalAlignment="Left" Margin="25,190,0,0" VerticalAlignment="Top"/>
+        <Label Content="{Binding MouseDown}" HorizontalAlignment="Left" Margin="100,190,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
