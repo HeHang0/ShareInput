@@ -76,6 +76,8 @@
     <Compile Include="CaptureMouse.xaml.cs">
       <DependentUpon>CaptureMouse.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Input\InputOutApi.cs" />
+    <Compile Include="Input\KeyboardHookLib.cs" />
     <Compile Include="Input\MouseEvent.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>

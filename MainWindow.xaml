@@ -26,6 +26,7 @@
         <Label Content="{Binding MoveToRightButtom}" HorizontalAlignment="Left" Margin="275,165,0,0" VerticalAlignment="Top"/>
         <Label Content="已经按键：" HorizontalAlignment="Left" Margin="25,190,0,0" VerticalAlignment="Top"/>
         <Label Content="{Binding MouseDown}" HorizontalAlignment="Left" Margin="100,190,0,0" VerticalAlignment="Top"/>
+        <Label Content="{Binding MouseEventStr}" HorizontalAlignment="Left" Margin="200,190,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>

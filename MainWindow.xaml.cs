@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -26,6 +27,19 @@ namespace SharePoint
         {
             InitializeComponent();
             DataContext = mouseEvent;
+            //Thread th = new Thread(new ThreadStart(GetClipboard));
+            //th.SetApartmentState(ApartmentState.STA);
+            //th.IsBackground = true;
+            //th.Start();
+        }
+
+        private void GetClipboard()
+        {
+            while (true)
+            {
+                mouseEvent.MouseEventStr = string.Join(",", Clipboard.GetDataObject().GetFormats().ToList());
+                Thread.Sleep(1000);
+            }
         }
 
         private void StartButton_Click(object sender, RoutedEventArgs e)

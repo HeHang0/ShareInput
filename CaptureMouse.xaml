@@ -3,11 +3,16 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:input="clr-namespace:System.Windows.Input;assembly=PresentationCore"
         xmlns:local="clr-namespace:SharePoint"
-        mc:Ignorable="d" MouseDown="Window_MouseDown"
+        mc:Ignorable="d"
+        PreviewMouseDown="Window_MouseDown" PreviewMouseUp="Window_MouseUp" MouseWheel="Window_MouseWheel"  Closed="Window_Closed"
+        input:InputMethod.IsInputMethodEnabled="False" LostFocus="Window_LostFocus"
         Title="CaptureMouse" Height="3" Width="3" ResizeMode="NoResize" WindowStyle="None" Topmost="True">
-    <Grid>
-        <Border BorderBrush="Black" Background="Black" BorderThickness="0" Margin="25,25,25,25"/>
+    <!--PreviewKeyDown="Window_PreviewKeyDown" PreviewKeyUp="Window_PreviewKeyUp"-->
+    <Grid Cursor="None">
+        <TextBox x:Name="FocusHelperButton" PreviewLostKeyboardFocus="Window_LostKeyboardFocus" Margin="0,0,0,0"/>
+        <!--<Border BorderBrush="Black" Background="Black" BorderThickness="0" Margin="25,25,25,25"/>-->
 
     </Grid>
 </Window>

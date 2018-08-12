@@ -20,5 +20,6 @@ namespace SharePoint.Input
         public int MoveToLeftButtom { get; set; }
         public int MoveToRightButtom { get; set; }
         public int MouseDown { get; set; }
+        public string MouseEventStr { get; set; }
     }
 }
